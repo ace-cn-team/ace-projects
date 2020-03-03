@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ace.sms.base.api.web.application.provider.impl.aliyun.autoconfigure.AliyunSmsAutoconfigure,\
+ace.sms.base.api.web.application.provider.impl.taobao.autoconfigure.TaobaoSmsAutoconfigure,\
+ace.sms.base.api.web.application.provider.impl.log.autoconfigure.LogSmsAutoconfigure

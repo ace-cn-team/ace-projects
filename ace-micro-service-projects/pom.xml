@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ace-projects</artifactId>
+        <groupId>org.ace</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ace-micro-service-projects</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ace-account-projects</module>
+        <module>ace-framework-micro-service-projects</module>
+        <module>ace-sms-projects</module>
+        <module>ace-image-verify-code-projects</module>
+    </modules>
+
+</project>
