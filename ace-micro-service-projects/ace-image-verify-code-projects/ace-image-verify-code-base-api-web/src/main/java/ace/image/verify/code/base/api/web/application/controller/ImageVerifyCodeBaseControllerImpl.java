@@ -7,6 +7,7 @@ import ace.image.verify.code.base.api.web.application.biz.imageverifycode.CheckB
 import ace.image.verify.code.base.api.web.application.biz.imageverifycode.GetBiz;
 import ace.image.verify.code.define.base.model.request.CheckRequest;
 import ace.image.verify.code.define.base.model.request.GetImageVerifyCodeRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,7 @@ import javax.validation.Valid;
  */
 @RestController
 @Validated
+@Slf4j
 public class ImageVerifyCodeBaseControllerImpl implements ImageVerifyCodeBaseController {
     @Autowired
     private GetBiz getBiz;

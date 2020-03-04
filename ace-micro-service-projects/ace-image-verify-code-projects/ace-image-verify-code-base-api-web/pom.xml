@@ -39,7 +39,46 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+
+        </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <!--使用jib插件-->
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>1.3.0</version>
+                <configuration>
+                    <!--from节点用来设置镜像的基础镜像，相当于Docerkfile中的FROM关键字-->
+                    <from>
+                        <!--使用openjdk官方镜像，tag是 -->
+<!--                        <image>adoptopenjdk/openjdk11:alpine</image>-->
+<!--                        <image>openjdk:11.0.6-slim</image>-->
+                        <image>openjdk:11.0.6-jre-buster</image>
+                    </from>
+                    <to>
+                        <!--镜像名称和tag，使用了mvn内置变量${project.version}，表示当前工程的version-->
+                        <image>${project.name}:${project.version}</image>
+                    </to>
+                    <!--容器相关的属性-->
+                    <container>
+                        <!--jvm内存参数-->
+                        <jvmFlags>
+                            <jvmFlag>-Xms2g</jvmFlag>
+                            <jvmFlag>-Xmx2g</jvmFlag>
+                        </jvmFlags>
+                        <!--要暴露的端口-->
+                        <ports>
+                            <port>7001</port>
+                        </ports>
+                    </container>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
