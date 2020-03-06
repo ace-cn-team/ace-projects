@@ -1,0 +1,1 @@
+docker run --restart=always -p 7001:7001 -d  --name ace-account-base-api-web ace-account-base-api-web:latest

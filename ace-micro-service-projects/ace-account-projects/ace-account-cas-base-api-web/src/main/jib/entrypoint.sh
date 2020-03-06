@@ -19,4 +19,4 @@ mv docker/cas/services/*.* /etc/cas/services 2>/dev/null
 #ls -R /etc/cas
 
 echo -e "\nRunning CAS..."
-exec java -Xms512m -Xmx2048M -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -jar docker/cas/war/cas.war
+exec java -Xms1G -Xmx2G -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -jar docker/war/ace-account-base-cas-api-web.war

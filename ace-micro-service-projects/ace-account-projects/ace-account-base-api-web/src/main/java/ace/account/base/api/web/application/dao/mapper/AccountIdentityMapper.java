@@ -2,6 +2,7 @@ package ace.account.base.api.web.application.dao.mapper;
 
 import ace.account.define.dao.model.entity.AccountIdentity;
 import ace.fw.mybatis.plus.extension.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author Caspar 279397942@qq.com
  * @since 2020-01-02
  */
-@Repository
+@Mapper
 public interface AccountIdentityMapper extends BaseMapper<AccountIdentity> {
 
 }

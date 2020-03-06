@@ -1,5 +1,6 @@
 package ace.account.base.api.web.application.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @description
  */
 @Configuration
+@MapperScan("ace.account.base.api.web.application.dao.mapper")
 public class AccountIdentityBaseApplicationConfig {
 
 }

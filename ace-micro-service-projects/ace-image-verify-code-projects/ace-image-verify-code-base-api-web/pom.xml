@@ -57,13 +57,12 @@
                     <!--from节点用来设置镜像的基础镜像，相当于Docerkfile中的FROM关键字-->
                     <from>
                         <!--使用openjdk官方镜像，tag是 -->
-<!--                        <image>adoptopenjdk/openjdk11:alpine</image>-->
 <!--                        <image>openjdk:11.0.6-slim</image>-->
                         <image>openjdk:11.0.6-jre-buster</image>
                     </from>
                     <to>
                         <!--镜像名称和tag，使用了mvn内置变量${project.version}，表示当前工程的version-->
-                        <image>${project.name}:${project.version}</image>
+                        <image>${project.name}:latest</image>
                     </to>
                     <!--容器相关的属性-->
                     <container>

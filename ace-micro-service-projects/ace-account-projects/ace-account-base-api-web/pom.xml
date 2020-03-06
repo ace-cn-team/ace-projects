@@ -21,6 +21,10 @@
         </dependency>
         <dependency>
             <groupId>org.ace</groupId>
+            <artifactId>ace-fw-restful-base-api-web-mybatis-plus-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ace</groupId>
             <artifactId>ace-fw-ms-application</artifactId>
         </dependency>
         <dependency>
@@ -75,7 +79,7 @@
                     </from>
                     <to>
                         <!--镜像名称和tag，使用了mvn内置变量${project.version}，表示当前工程的version-->
-                        <image>ace-account-base-api-web:${project.version}</image>
+                        <image>${project.name}:latest</image>
                     </to>
                     <!--容器相关的属性-->
                     <container>
