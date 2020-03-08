@@ -1,5 +1,6 @@
 package ace.account.base.api.web.application;
 
+import org.apache.logging.log4j.core.config.ConfigurationFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
  */
 @SpringBootApplication
 public class AccountIdentityBaseApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(AccountIdentityBaseApplication.class, args);
     }

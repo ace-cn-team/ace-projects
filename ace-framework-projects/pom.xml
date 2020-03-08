@@ -32,6 +32,7 @@
         <module>ace-fw-copier-cglib-autoconfigure</module>
         <module>ace-fw-utils-web</module>
         <module>ace-fw-redisson-autoconfigure</module>
+        <module>ace-fw-log4j2-autoconfigure</module>
 
     </modules>
 

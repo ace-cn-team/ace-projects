@@ -267,7 +267,7 @@ public class MsApplicationAutoConfiguration implements WebMvcConfigurer, ErrorPa
     }
 
     @Bean
-    public GlobalErrorRestControllerAdvice globalErrorRestControllerAdvice() {
-        return new GlobalErrorRestControllerAdvice();
+    public GlobalErrorRestControllerAdvice globalErrorRestControllerAdvice(WebExceptionHandler webExceptionHandler) {
+        return new GlobalErrorRestControllerAdvice(webExceptionHandler);
     }
 }

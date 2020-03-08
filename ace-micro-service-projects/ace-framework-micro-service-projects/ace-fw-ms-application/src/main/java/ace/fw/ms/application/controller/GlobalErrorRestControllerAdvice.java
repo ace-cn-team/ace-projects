@@ -3,6 +3,9 @@ package ace.fw.ms.application.controller;
 import ace.fw.model.response.GenericResponse;
 import ace.fw.ms.application.constant.AceWebApplicationBootstrapConstant;
 import ace.fw.ms.application.support.handler.WebExceptionHandler;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
@@ -20,10 +23,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 @RestControllerAdvice
 @RestController
+@AllArgsConstructor
 public class GlobalErrorRestControllerAdvice {
 
-    @Autowired
-    WebExceptionHandler webExceptionHandler;
+    private WebExceptionHandler webExceptionHandler;
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
