@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-ace.fw.restful.base.api.web.mybatis.plus.autoconfigure.MybatisPlugCommonRestServiceAutoConfigure

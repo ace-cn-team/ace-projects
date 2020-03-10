@@ -1,1 +1,0 @@
-docker run --restart=always -p 6001:6001 -d  --name ace-image-verify-code-base-api-web ace-image-verify-code-base-api-web:1.0-SNAPSHOT

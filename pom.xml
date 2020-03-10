@@ -11,6 +11,7 @@
 
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <ace.projects.version>1.0-SNAPSHOT</ace.projects.version>
         <mybatis.plus.projects.version>3.3.0</mybatis.plus.projects.version>
         <spring.framework.version>5.2.1.RELEASE</spring.framework.version>
@@ -115,7 +116,16 @@
                 <artifactId>ace-sms-base-api</artifactId>
                 <version>${ace.projects.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.ace</groupId>
+                <artifactId>ace-sms-base-api-client-autoconfigure</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ace</groupId>
+                <artifactId>ace-sms-logic-api</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.ace</groupId>
                 <artifactId>ace-fw-graphql-spring</artifactId>
@@ -229,9 +239,15 @@
             </dependency>
             <dependency>
                 <groupId>org.ace</groupId>
+                <artifactId>ace-image-verify-code-base-api-client-autoconfigure</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ace</groupId>
                 <artifactId>ace-fw-log4j2-autoconfigure</artifactId>
                 <version>${ace.projects.version}</version>
             </dependency>
+
             <!-- 内部项目 end -->
 
             <dependency>
@@ -379,10 +395,7 @@
                 <groupId>com.alibaba</groupId>
                 <version>1.2.49</version>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-log4j2</artifactId>
-            </dependency>
+
             <dependency>
                 <artifactId>slf4j-api</artifactId>
                 <groupId>org.slf4j</groupId>
@@ -395,7 +408,7 @@
             </dependency>
 
             <dependency>
-                <groupId>org.hibernate</groupId>
+                <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>6.0.18.Final</version>
             </dependency>

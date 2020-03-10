@@ -1,1 +1,0 @@
-docker run --restart=always -p 7003:7003 -d --name ace-account-cas-base-api-web ace-account-cas-base-api-web:latest

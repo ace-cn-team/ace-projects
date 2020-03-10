@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-ace.account.cas.base.api.client.autoconfigure.EnableFeignClientAutoConfigure,\
-ace.account.cas.base.api.client.autoconfigure.EnableFeignClientFacadeAutoConfigure
