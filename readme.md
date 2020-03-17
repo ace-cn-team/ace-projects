@@ -1,63 +1,74 @@
 # 项目设计说明 
 
 ## 项目命名说明
-Base Layer
-	BaseService
-	DbService
-	Mapper
 
-Logic Layer
-	LogicService
-	Logic
-	Base Layer BaseService
-### 模块
-| 名称模板 | 说明  
-| :-  | :- |  
-| ace-{领域名称}-projects | 某领域项目聚合模块 |    
-| ace-{领域名称}-micro-mybatisPlusDbService-biz | 某领域微服务业务实现层 |
-| ace-{领域名称}-micro-mybatisPlusDbService-biz-api | 某领域微服务业务接口层 |
-| ace-{领域名称}-micro-mybatisPlusDbService-dal | 某领域微服务资源访问实现层 |
-| ace-{领域名称}-micro-mybatisPlusDbService-dal-api | 某领域微服务资源访问接口层 |
-| ace-{领域名称}-common | 某领域公共层 |  
-| ace-{领域名称}-task | 某领域定时任务 |
-| ace-{领域名称}-mq-consumer | 某领域消息消费者 |
+## 项目框架层 - framework layer(fw)
 
-### 实例
-| 名称模板 | 说明  
-| :-  | :- |  
-| ace-account-projects | 用户领域项目聚合模块 |    
-| ace-account-micro-mybatisPlusDbService-biz | 用户领域微服务业务实现层 |
-| ace-account-micro-mybatisPlusDbService-biz-api | 用户领域微服务业务接口层 |
-| ace-account-micro-mybatisPlusDbService-dal | 用户领域微服务资源访问实现层 |
-| ace-account-micro-mybatisPlusDbService-dal-api | 用户领域微服务资源访问接口层 |
-| ace-account-common | 用户领域公共层 |  
-| ace-account-task | 用户领域定时任务 |
-| ace-account-mq-consumer | 用户领域消息消费者 |
+### ace-xxx-diagram
+    各领域数据库设计
+    
+### ace-fw-xxx
+    框架层
+    主要职责
+        1.提供基础功能，如：json xml log
+### ace-fw-xxx-autoconfigure
+    自动配置工程
+    主要职责
+        1.使用spring boot spring.factories机制，进行自动配置
 
- - ace-demo-projects 
+## 基础微服务层 - Base Layer
+
+### ace-xxx-base-projects
+    基础微服务工程
+    主要职责
+        1.管理对应领域基础微服务，所有工程
         
-        demo项目聚合
+### ace-xxx-base-api 
+    基础微服务接口层
+    主要职责 
+        1.controller接口层
+        2.feign client接口层
+        
+### ace-xxx-base-api-client-autoconfigure
+    基础微服务feign client接口层自动配置，主要职责
+	    1.自动配置ace-xxx-xxx-base-api项目的feign clietn接口层
+
+### ace-xxx-base-api-web
+    基础微服务接口层web实现
+    主要职责 
+        1. 基础微服务controller接口层实现
+
+### ace-xxx-define
+    基础微服务定义层，独立工程，不进行项目中其它工程
+    主要职责
+        1.定义贯穿整个基础微服务领域的实体
+        2.定义dao base与logic层相关实体 枚举 request response
+
+### ace-xxx-define-mq
+    基础微服务mq定义层，独立工程，不进行项目中其它工程
+    主要职责
+        1.定义贯穿整个基础微服务领域的mq
+
+## 逻辑微服务层 - Logic Layer
+
+### ace-xxx-logic-projects
+    逻辑微服务工程
+    主要职责
+        1.管理对应领域逻辑微服务，所有工程
+        
+### ace-xxx-logic-api 
+    逻辑微服务接口层
+    主要职责 
+        1.对外controller接口层
+        2.feign client接口层
+
+### ace-xxx-logic-api-web
+    逻辑微服务接口层web实现
+    主要职责 
+        1. 逻辑微服务controller接口层实现
+        
+### ace-xxx-logic-api-client-autoconfigure
+    逻辑微服务feign client接口层自动配置，主要职责
+	    1.自动配置ace-xxx-logic-api项目的feign clietn接口层
  
- - ace-starter-projects
-        
-        spring starter项目聚合
-        
- - ace-account-projects
-         
-        用户项目聚合   
-     
- - ace
-    ace-{模块名称}-projects 项目聚合模块
-    ace-{模块名称}-micro-mybatisPlusDbService-biz      微服务某领域业务实现层
-    ace-{模块名称}-micro-mybatisPlusDbService-biz-api  微服务某领域业务实现层
-    ace-{模块名称}-micro-mybatisPlusDbService-dal      微服务某领域资源访问层
-
- - ace-demo-projects 
-        
-        demo项目聚合
- 
- - ace-starter-projects
-        
-        spring starter项目聚合
-        
  
