@@ -283,7 +283,11 @@
                 <artifactId>ace-fw-ms-discovery-server-autoconfigure</artifactId>
                 <version>${ace.projects.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.ace</groupId>
+                <artifactId>ace-fw-graphql-autoconfigure</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
             <!-- 内部项目 end -->
 
             <dependency>
@@ -511,7 +515,7 @@
             <dependency>
                 <groupId>com.graphql-java</groupId>
                 <artifactId>graphql-java</artifactId>
-                <version>13.0</version>
+                <version>14.0</version>
             </dependency>
             <dependency>
                 <groupId>io.github.graphql-java</groupId>
@@ -526,6 +530,16 @@
             <dependency>
                 <groupId>com.graphql-java-kickstart</groupId>
                 <artifactId>graphql-java-tools</artifactId>
+                <version>6.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.graphql-java-kickstart</groupId>
+                <artifactId>graphiql-spring-boot-starter</artifactId>
+                <version>6.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.graphql-java-kickstart</groupId>
+                <artifactId>graphql-kickstart-spring-boot-autoconfigure-tools</artifactId>
                 <version>6.0.0</version>
             </dependency>
             <dependency>
