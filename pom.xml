@@ -623,6 +623,12 @@
                 <artifactId>feign-gson</artifactId>
                 <version>10.4.0</version>
             </dependency>
+            <!--注意： 这里的版本,要和部署在服务器上的版本号一致-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>4.7.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <distributionManagement>
