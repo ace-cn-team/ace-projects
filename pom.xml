@@ -75,6 +75,16 @@
             </dependency>
             <dependency>
                 <groupId>org.ace</groupId>
+                <artifactId>ace-fw-mq-rocketmq</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ace</groupId>
+                <artifactId>ace-fw-mq-rocketmq-autoconfigure</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ace</groupId>
                 <artifactId>ace-fw-redisson-autoconfigure</artifactId>
                 <version>${ace.projects.version}</version>
             </dependency>
