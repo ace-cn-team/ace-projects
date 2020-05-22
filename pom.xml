@@ -39,6 +39,11 @@
             </dependency>
             <dependency>
                 <groupId>org.ace</groupId>
+                <artifactId>ace-fw-system-code</artifactId>
+                <version>${ace.projects.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ace</groupId>
                 <artifactId>ace-fw-data</artifactId>
                 <version>${ace.projects.version}</version>
             </dependency>
