@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>org.ace</groupId>
                 <artifactId>ace-dependency-management</artifactId>
-                <version>1.0.0.3</version>
+                <version>1.0.0.4</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
